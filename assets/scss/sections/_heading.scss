@@ -1,0 +1,35 @@
+.heading {
+    width: 700px;
+    margin: 0 auto;
+
+    h4, h5 {
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    h4 {
+        color: var(--black);
+        position: relative;
+        padding: 15px 0;
+        font-family:  Arial, sans-serif;
+
+        &::after {
+            width: 20px;
+            height: 0;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 3px solid var(--black);
+            background: var(--black);
+            
+        }
+    }
+
+    h5 {
+        margin:  15px 0;
+        line-height: 2.5rem;
+        color: var(--green);
+    }
+}

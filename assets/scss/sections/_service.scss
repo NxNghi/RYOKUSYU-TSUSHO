@@ -1,0 +1,52 @@
+.service {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    background: url('../images/bg-content.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    &__content {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+
+    &__item {
+        max-width: 470px;
+        margin: 10px;
+        padding: 20px 0;
+
+        h5 {
+            margin: 10px 0;
+            padding: 10px 0;
+            text-align: center;
+            letter-spacing: 3px;
+            border-bottom: 1px solid var(--green);
+            color: var(--green);
+        }
+
+        p {
+            line-height: 1.5rem;
+        }
+    }
+
+    &__btn {
+        color: var(--white);
+        background-color: var(--green);
+        padding: 10px 15px;
+        text-transform: uppercase;
+        font-size: rem(12px);
+        border-radius: 20px;
+        float: right;
+        letter-spacing: 3px;
+
+        &::after {
+            width: 0;
+            height: 0;
+            padding-left: 10px;
+            content: '>';
+        }
+    }
+    
+}
